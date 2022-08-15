@@ -68,7 +68,7 @@ jobs:
         env:
           SUDO_USER: dio
       - name: Installing Packages
-        continue-on-error: true
+        if: ${{ success() || failure() }}
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
