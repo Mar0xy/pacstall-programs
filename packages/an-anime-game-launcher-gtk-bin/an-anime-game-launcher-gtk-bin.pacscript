@@ -31,7 +31,7 @@ build() {
 }
 
 install() {
-    # Get icon and install it
+    # Get icon and install i
     wget -q "https://aur.archlinux.org/cgit/aur.git/plain/icon.png?h=an-anime-game-launcher-gtk-bin" -O icon.png
     sudo install -Dm644 icon.png "${STOWDIR}/${name}/usr/share/pixmaps/an-anime-game-launcher.png"
 
